@@ -10,7 +10,7 @@ use yii\helpers\Html;
 
 <table class="table table-bordered table-striped">
     <tr>
-        <?php foreach(['model_class', 'model_id', 'model_method', 'model_value', 'start_at_local', 'interval', 'end_at_local'] as $attribute): ?>
+        <?php foreach(['model_class', 'model_method', 'model_value', 'start_at_local', 'interval', 'end_at_local'] as $attribute): ?>
             <?php if($this->context->$attribute === null) : ?>
                 <td><?=
                     in_array($attribute, ['start_at_local', 'end_at_local'])

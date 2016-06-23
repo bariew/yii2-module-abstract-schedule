@@ -24,7 +24,7 @@ class AttachedSchedule extends ArrayModelField
         parent::init();
         $this->form = $this->form ? : new ActiveForm(['init' => false]);
         $this->model_class = $this->model_class ? : get_class($this->model);
-        $this->model_id = $this->model_id ? : $this->model->primaryKey;
+        //$this->model_id = $this->model_id ? : ($this->model->primaryKey ? : 0);
         if (!$this->model_method) {
             $reflection = new \ReflectionClass($this->model_class);
             $methods = $reflection->getMethods(\ReflectionMethod::IS_PUBLIC);
