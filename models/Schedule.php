@@ -1,6 +1,6 @@
 <?php
 /**
- * Item class file.
+ * Schedule class file.
  * @copyright (c) 2015, Pavel Bariev
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
@@ -20,6 +20,8 @@ use Yii;
  * @property INTEGER $owner_id
  * @property INTEGER $start_at
  * @property INTEGER $end_at
+ * @property INTEGER $start_at_local
+ * @property INTEGER $end_at_local
  * @property STRING $model_class
  * @property INTEGER $model_id
  * @property STRING $model_method
@@ -28,23 +30,20 @@ use Yii;
  * @property string link
  *
  */
-class Item extends AbstractModel
+class Schedule extends AbstractModel
 {
-
     /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['model_class', 'model_method', 'start_at'], 'required'],
-            ['interval', 'required', 'when' => function($model){return $model->end_at;}],
-            [['model_id', 'start_at', 'stop_at', 'end_at', 'interval'], 'integer'],
-            [['model_class', 'model_method'], 'string', 'max' => 255],
+            [['model_class', 'model_method', 'start_at_local'], 'required'],
+            [['model_id', 'interval'], 'integer'],
+            [['model_class', 'model_method', 'start_at_local', 'end_at_local'], 'string', 'max' => 255],
             [['model_value'], 'safe']
         ];
     }
-
 
     /**
      * @inheritdoc
@@ -60,8 +59,21 @@ class Item extends AbstractModel
             'model_method' => Yii::t('modules/schedule', 'Model method'),
             'model_value' => Yii::t('modules/schedule', 'Method value'),
             'interval' => Yii::t('modules/schedule', 'Interval (minutes)'),
-            'start_at' => Yii::t('modules/schedule', 'Start At'),
-            'end_at' => Yii::t('modules/schedule', 'End At'),
+            'start_at_local' => Yii::t('modules/schedule', 'Start At'),
+            'end_at_local' => Yii::t('modules/schedule', 'End At'),
+        ];
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function behaviors()
+    {
+        return [
+            'datetime' => [
+                'class' => \bariew\yii2Tools\behaviors\DatetimeBehavior::className(),
+                'attributes' => ['start_at', 'end_at'],
+            ]
         ];
     }
 

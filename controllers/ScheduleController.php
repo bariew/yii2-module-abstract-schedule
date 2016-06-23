@@ -1,6 +1,6 @@
 <?php
 /**
- * ItemController class file.
+ * ScheduleController class file.
  * @copyright (c) 2015, Bariev Pavel
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
@@ -12,11 +12,11 @@ use Yii;
 use yii\filters\VerbFilter;
 
 /**
- * For managing schedule items.
+ * For managing schedule schedules.
  *
  * @author Pavel Bariev <bariew@yandex.ru>
  */
-class ItemController extends AbstractModelController
+class ScheduleController extends AbstractModelController
 {
     /**
      * @inheritdoc

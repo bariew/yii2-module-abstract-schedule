@@ -2,13 +2,13 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use kartik\date\DatePicker;
+use kartik\datetime\DateTimePicker;
 /* @var $this yii\web\View */
-/* @var $model bariew\scheduleModule\models\Item */
+/* @var $model bariew\scheduleModule\models\Schedule */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="item-form">
+<div class="schedule-form">
 
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
 
@@ -18,10 +18,8 @@ use kartik\date\DatePicker;
     <?= $form->field($model, 'model_method')->textInput(['maxlength' => 255]) ?>
     <?= $form->field($model, 'model_value')->textInput(['maxlength' => 255]) ?>
     <?= $form->field($model, 'interval')->textInput(['maxlength' => 255]) ?>
-    <?= $form->field($model, 'start_at')->widget(DatePicker::className(), [
-        'type' => DatePicker::TYPE_RANGE,
-        'attribute2' => 'end_at'
-    ]) ?>
+    <?= $form->field($model, 'start_at_local')->widget(DateTimePicker::className(), ['convertFormat' => true]) ?>
+    <?= $form->field($model, 'end_at_local')->widget(DateTimePicker::className(), ['convertFormat' => true]) ?>
     <div class="form-group text-right">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('modules/schedule', 'Create') : Yii::t('modules/schedule', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>

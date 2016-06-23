@@ -10,7 +10,7 @@ class Module extends \yii\base\Module
     public $params = [
         'menu'  => [
             'label'    => 'schedules',
-            'url' => ['/schedule/item/index']
+            'url' => ['/schedule/schedule/index']
         ]
     ];
 }

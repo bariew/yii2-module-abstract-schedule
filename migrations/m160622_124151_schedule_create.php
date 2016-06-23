@@ -2,13 +2,13 @@
 
 use yii\db\Schema;
 use yii\db\Migration;
-use bariew\scheduleModule\models\Item;
+use bariew\scheduleModule\models\Schedule;
 
-class m160622_124151_item_create extends Migration
+class m160622_124151_schedule_create extends Migration
 {
     public function up()
     {
-        $this->createTable(Item::tableName(), [
+        $this->createTable(Schedule::tableName(), [
             'id' => Schema::TYPE_PK,
             'owner_id' => Schema::TYPE_INTEGER,
             'interval' => Schema::TYPE_INTEGER,
@@ -23,6 +23,6 @@ class m160622_124151_item_create extends Migration
 
     public function down()
     {
-        $this->dropTable(Item::tableName());
+        $this->dropTable(Schedule::tableName());
     }
 }

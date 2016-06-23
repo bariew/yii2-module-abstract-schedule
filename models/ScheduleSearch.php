@@ -1,6 +1,6 @@
 <?php
 /**
- * ItemSearch class file.
+ * ScheduleSearch class file.
  * @copyright (c) 2015, Pavel Bariev
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
@@ -11,15 +11,15 @@ use bariew\abstractModule\models\AbstractModelExtender;
 use yii\data\ActiveDataProvider;
 
 /**
- * Searches schedule items.
+ * Searches schedule schedules.
  * 
  * 
  * @example
  * @author Pavel Bariev <bariew@yandex.ru>
  *
- * @mixin Item
+ * @mixin Schedule
  */
-class ItemSearch extends AbstractModelExtender
+class ScheduleSearch extends AbstractModelExtender
 {
     /**
      * @inheritdoc
