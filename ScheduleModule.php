@@ -2,7 +2,7 @@
 
 namespace bariew\scheduleModule;
 
-class Module extends \yii\base\Module
+class ScheduleModule extends \yii\base\Module
 {
     /**
      * @var array for menu auto generation
