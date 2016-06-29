@@ -7,7 +7,7 @@
 
 namespace bariew\scheduleAbstractModule\controllers;
 
-use bariew\abstractAbstractModule\controllers\AbstractModelController;
+use bariew\abstractModule\controllers\AbstractModelController;
 use Yii;
 use yii\filters\VerbFilter;
 

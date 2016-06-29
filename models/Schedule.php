@@ -7,7 +7,7 @@
 
 namespace bariew\scheduleAbstractModule\models;
 
-use bariew\abstractAbstractModule\models\AbstractModel;
+use bariew\abstractModule\models\AbstractModel;
 use bariew\yii2Tools\helpers\ModelHelper;
 use Yii;
 

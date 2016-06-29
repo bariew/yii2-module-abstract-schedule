@@ -7,7 +7,7 @@
 
 namespace bariew\scheduleAbstractModule\models;
 
-use bariew\abstractAbstractModule\models\AbstractModelExtender;
+use bariew\abstractModule\models\AbstractModelExtender;
 use yii\data\ActiveDataProvider;
 
 /**
