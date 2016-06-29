@@ -1,5 +1,5 @@
 {
-    "name": "bariew/yii2-schedule-module",
+    "name": "bariew/yii2-module-abstract-schedule",
     "description": "Yii2 module for running scheduled processes",
     "type": "yii2-extension",
     "keywords": ["yii2","module","schedule"],
@@ -11,13 +11,13 @@
         }
     ],
     "require" : {
-        "bariew/yii2-abstract-module":"*",
+        "bariew/yii2-module-abstract":"*",
         "kartik-v/yii2-widget-datetimepicker": "@dev",
         "bariew/yii2-tools": "dev-master"
     },
     "autoload": {
         "psr-4": {
-            "bariew\\scheduleModule\\": ""
+            "bariew\\scheduleAbstractModule\\": ""
         }
     }  
 }

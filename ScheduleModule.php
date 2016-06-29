@@ -1,6 +1,6 @@
 <?php
 
-namespace bariew\scheduleModule;
+namespace bariew\scheduleAbstractModule;
 
 class ScheduleModule extends \yii\base\Module
 {

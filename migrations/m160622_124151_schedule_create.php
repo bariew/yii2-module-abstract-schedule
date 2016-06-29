@@ -2,7 +2,7 @@
 
 use yii\db\Schema;
 use yii\db\Migration;
-use bariew\scheduleModule\models\Schedule;
+use bariew\scheduleAbstractModule\models\Schedule;
 
 class m160622_124151_schedule_create extends Migration
 {

@@ -5,9 +5,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 
-namespace bariew\scheduleModule\controllers;
+namespace bariew\scheduleAbstractModule\controllers;
 
-use bariew\abstractModule\controllers\AbstractModelController;
+use bariew\abstractAbstractModule\controllers\AbstractModelController;
 use Yii;
 use yii\filters\VerbFilter;
 

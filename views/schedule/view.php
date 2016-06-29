@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model bariew\scheduleModule\models\Schedule */
+/* @var $model bariew\scheduleAbstractModule\models\Schedule */
 
 $this->title = Yii::t('modules/schedule', 'Schedule for {model}', ['model' => $model->getLink()]);
 $this->params['breadcrumbs'][] = ['label' => Yii::t('modules/schedule', 'Schedules'), 'url' => ['index']];

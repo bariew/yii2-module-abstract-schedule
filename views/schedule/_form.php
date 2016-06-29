@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use kartik\datetime\DateTimePicker;
 /* @var $this yii\web\View */
-/* @var $model bariew\scheduleModule\models\Schedule */
+/* @var $model bariew\scheduleAbstractModule\models\Schedule */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 

@@ -6,7 +6,7 @@
  * Time: 3:57
  */
 
-namespace bariew\scheduleModule\widgets;
+namespace bariew\scheduleAbstractModule\widgets;
 
 
 use bariew\yii2Tools\widgets\ActiveForm;

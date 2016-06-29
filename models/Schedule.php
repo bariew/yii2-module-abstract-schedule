@@ -5,9 +5,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 
-namespace bariew\scheduleModule\models;
+namespace bariew\scheduleAbstractModule\models;
 
-use bariew\abstractModule\models\AbstractModel;
+use bariew\abstractAbstractModule\models\AbstractModel;
 use bariew\yii2Tools\helpers\ModelHelper;
 use Yii;
 

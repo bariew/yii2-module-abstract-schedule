@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model bariew\scheduleModule\models\Schedule */
+/* @var $model bariew\scheduleAbstractModule\models\Schedule */
 
 $this->title = Yii::t('modules/schedule', 'Update Schedule');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('modules/schedule', 'Schedule List'), 'url' => ['index']];
